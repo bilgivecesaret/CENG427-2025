@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Week2</string>
+    <string name="button_text">Dialog</string>
+    <string name="button_text_two">Toast</string>
+</resources>
