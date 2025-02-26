@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week5_1</string>
+    <string name="tv1_txt">FrameLayout Example</string>
+    <string name="img1_des">Bug image</string>
+    <string name="img2_des">Another image</string>
+    <string name="btn1_txt">Show Spades</string>
+</resources>

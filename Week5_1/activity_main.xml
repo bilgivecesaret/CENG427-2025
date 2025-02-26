@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/tv1_txt"
+        android:textColor="#748B97"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/img1_des"
+            android:scaleType="fitXY"
+            android:src="@drawable/spades" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/img2_des"
+            android:scaleType="fitXY"
+            android:src="@drawable/clubs" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custombuttonblue"
+        android:onClick="onClick"
+        android:text="@string/btn1_txt" />
+
+</LinearLayout>
