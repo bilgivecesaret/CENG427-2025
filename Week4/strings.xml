@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Week4_1</string>
+    <array name="city_aray">
+        <item>İstanbul</item>
+        <item>Ankara</item>
+        <item>Konya</item>
+    </array>
+</resources>
