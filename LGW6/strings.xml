@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LGW6</string>
+    <string name="tv_list_txt">country</string>
+    <string name="tv_title1">Currency </string>
+    <string name="tv_title2">Converter</string>
+    <string name="tv_currency1">Amount (TL): </string>
+    <string name="tv_currency2">Amount (USD): </string>
+    <string name="tv_hint">Enter amount</string>
+    <string name="tv_choice_txt">Select Currency:</string>
+</resources>
