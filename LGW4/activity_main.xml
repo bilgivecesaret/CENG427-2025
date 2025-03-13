@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv1_txt"
+        android:textColor="#ABC"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombuttonred"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/btn1_txt"
+        android:textColor="#001F00"
+        android:textSize="34sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custombuttongreen"
+        android:onClick="onClick"
+        android:text="@string/btn2_txt" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et1_hint"
+        android:paddingBottom="15dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et2_hint"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:paddingRight="30dp"
+        android:text="@string/chk1_txt" />
+
+    <CheckBox
+        android:id="@+id/chk2"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:text="@string/chk2_txt" />
+
+    <RadioGroup
+        android:id="@+id/rdbGp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingRight="30dp"
+            android:text="@string/rdb1_txt"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/rdb2_txt"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <!-- Drop down list -->
+
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/city_array"
+        android:minHeight="48dp"
+        android:spinnerMode="dialog" />
+
+    <SeekBar
+        android:id="@+id/seek1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="12"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:progress="6" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cat" />
+
+
+</LinearLayout>
