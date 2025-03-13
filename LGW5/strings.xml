@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LGW5</string>
+    <string name="img1_des">Star Wars</string>
+    <string name="img2_des">Lord of the Rings</string>
+    <string name="img3_des">Godfather</string>
+    <string name="btn1_txt">Change Background Color</string>
+    <string name="tv1_txt">Movies</string>
+</resources>
