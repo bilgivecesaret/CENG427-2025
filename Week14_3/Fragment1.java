@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 
 
 public class Fragment1 extends Fragment {
-    private static final String TAG = "Fragment 2";
+    private static final String TAG = "Fragment1";
 
     @Nullable
     @Override

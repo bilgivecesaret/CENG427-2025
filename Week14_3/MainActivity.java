@@ -32,18 +32,20 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
-        Fragment fragment;
         if (displayMetrics.widthPixels > displayMetrics.heightPixels) {
-            // Landscape Mode - Load Fragment1
-            fragment = new Fragment1();
-        } else {
-            // Portrait Mode - Load Fragment2
-            fragment = new Fragment2();
-        }
+            // Landscape Mode - Load Fragment1 and Fragment2 Side by Side
+            Fragment1 fragment1 = new Fragment1();
+            Fragment2 fragment2 = new Fragment2();
 
-        // Replace the fragment dynamically with FragmentContainerView
-        fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.replace(R.id.fragment_container_left, fragment1);
+            fragmentTransaction.replace(R.id.fragment_container_right, fragment2);
+        } else {
+            // Portrait Mode - Load Only Fragment2
+            Fragment2 fragment2 = new Fragment2();
+            fragmentTransaction.replace(R.id.fragment_container, fragment2);
+        }
         //fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
 }
